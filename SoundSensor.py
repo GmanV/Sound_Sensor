@@ -10,8 +10,8 @@ LED_GPIO = 5                   # The LED pin
 TRIGGER_GPIO = 6               # The TRIGGER GPIO
 led = mraa.Gpio(LED_GPIO)      # Get the LED pin object
 led.dir(mraa.DIR_OUT)          # Set the direction as output
-trig = mraa.Gpio(BUTTON_GPIO)   # Get the TRIGGER pin object
-trig.dir(mraa.DIR_IN)           # Set the direction as input
+trig = mraa.Gpio(TRIGGER_GPIO) # Get the TRIGGER pin object
+trig.dir(mraa.DIR_IN)          # Set the direction as input
 
 ledState = False               # LED is off to begin with
 led.write(0)
