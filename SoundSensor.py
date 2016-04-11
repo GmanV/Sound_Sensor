@@ -1,6 +1,5 @@
 import mraa 
 import time
-
 import socket   #for sockets
 import sys  #for exit
 
