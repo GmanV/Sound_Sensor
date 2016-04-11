@@ -17,7 +17,7 @@ ledState = False               # LED is off to begin with
 led.write(0)
 
 
-def Triggerf():
+def getTriggerf():
     """ This function operates for minimal send interval """
     t = time.time()
     next_sample_time = t + SENDMSG_INTERVAL
